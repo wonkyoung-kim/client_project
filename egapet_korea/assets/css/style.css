@@ -1,0 +1,657 @@
+@charset "utf-8";
+
+@import "reset.css";
+@import "common.css";
+
+/* header */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  height: 7rem;
+  background-color: #000;
+}
+header .inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+}
+header .logo a {
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+header .mo-btn {
+  display: none;
+}
+header .mo-btn svg {
+  padding: 2rem;
+  color: #fff;
+}
+header .gnb {
+  margin-left: 4.8rem;
+}
+header .gnb .gnb-list {
+  display: flex;
+  gap: 8rem;
+}
+header .lang {
+  display: block;
+  margin-left: auto;
+  color: #fff;
+}
+/* footer */
+.footer {
+  padding: 6rem 0;
+  color: #fff;
+  background-color: #000;
+}
+.footer .info {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.footer .info span {
+  display: block;
+}
+.footer .info span + span {
+  margin-top: 1rem;
+}
+
+/* btn-top */
+.btn-top-wrap {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+}
+.btn-top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* home */
+.home .sc-banner .banner {
+  position: relative;
+  z-index: -1;
+}
+.home .sc-banner .banner .banner-info {
+  position: absolute;
+  left: 2rem;
+  bottom: 5rem;
+}
+.home .sc-banner .banner .sub-txt {
+  line-height: 1.4;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #fff;
+  text-shadow: 0.2rem 0.1rem 0.8rem #000;
+}
+.home .sc-banner .banner .banner-txt {
+  /* position: absolute;
+  left: 2rem;
+  top: 1rem; */
+  /* line-height: 1; */
+  font-family: "oswald";
+  font-weight: 900;
+  font-size: 7.2vw;
+  color: #fff;
+  text-shadow: 0.2rem 0.1rem 0.8rem #000;
+}
+.home .sc-banner .banner .mo-txt-img {
+  display: none;
+}
+.home .sc-banner .banner .img-logo {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  width: 22vw;
+}
+.home .sc-banner .inner {
+  padding: 10rem 3.2rem;
+  text-align: center;
+}
+.home .sc-banner .sc-title {
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 6rem;
+  color: #fff;
+}
+.home .sc-banner .desc {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #bbb;
+}
+.home .sc-feature .sc-title {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5.8rem;
+  color: #fff;
+}
+.home .sc-feature .desc {
+  margin-bottom: 14.4rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #bbb;
+}
+.home .sc-feature .feature-list {
+  /* max-width: 89.6rem; */
+  margin: 0 auto;
+}
+.home .sc-feature .feature-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+.home .sc-feature .feature-list li img {
+  width: 70%;
+  border-radius: 0.6rem;
+}
+.home .sc-feature .feature-list li .txt {
+  text-align: center;
+}
+.home .sc-feature .feature-list li .txt strong {
+  display: block;
+  /* margin-bottom: 1.6rem; */
+  margin-bottom: 4rem;
+  font-weight: 700;
+  /* font-size: 2.4rem; */
+  font-size: 4rem;
+  color: #fff;
+}
+.home .sc-feature .feature-list li .txt p {
+  line-height: 1.6;
+  font-weight: 700;
+  /* font-size: 1.6rem; */
+  font-size: 2rem;
+  color: #bbb;
+}
+.home .sc-service .service-list li {
+  margin-top: 6rem;
+}
+.home .sc-service .service-list li > .img {
+  position: relative;
+}
+.home .sc-service .service-list li > .img > .inner {
+  position: absolute;
+  left: 0;
+  bottom: 6rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home .sc-service .service-list li .txt {
+  margin-top: 4rem;
+  text-shadow: 0.1rem 0.1rem 1.6rem #000;
+}
+.home .sc-service .service-list li .txt strong {
+  display: block;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 4.4vw;
+  color: #fff;
+}
+.home .sc-service .service-list li .txt .info {
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #fff;
+}
+.home .sc-service .service-list li .mySwiper {
+  margin-top: 12rem;
+  padding-bottom: 8rem;
+  overflow: visible;
+}
+.home .sc-service .service-list li .mySwiper .swiper-slide .img {
+  width: 100%;
+  margin-bottom: 3.2rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.home .sc-service .service-list li .mySwiper .swiper-slide .tit {
+  display: block;
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.home .sc-service .service-list li .mySwiper .swiper-slide .desc {
+  line-height: 1.6;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #bbb;
+}
+.home .sc-service .service-list li .swiper-container .btn-prev,
+.home .sc-service .service-list li .swiper-container .btn-next {
+  display: none;
+}
+
+/* about */
+.about .sc-title {
+  margin-bottom: 7rem;
+  font-weight: 700;
+  font-size: 4.2rem;
+  color: #b7904d;
+  text-align: center;
+}
+.about .sc-banner .inner {
+  padding: 10rem 3.2rem;
+}
+.about .sc-banner .img {
+  position: relative;
+}
+.about .sc-banner .img img {
+  object-fit: cover;
+}
+.about .sc-banner .img span {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  color: #fff;
+  font-family: "Oswald";
+  font-weight: 900;
+  font-size: 8vw;
+  white-space: nowrap;
+}
+.about .sc-banner .txt {
+  text-align: center;
+}
+.about .sc-banner .txt h2 {
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 6rem;
+}
+.about .sc-banner .txt p {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.about .sc-banner .logo {
+  width: 20%;
+  margin: 10rem auto 0;
+}
+.about .sc-company .info {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.about .sc-company .info .txt strong {
+  display: block;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  font-size: 6rem;
+}
+.about .sc-company .info .txt strong span {
+  padding-left: 1rem;
+  font-weight: 100;
+  font-size: 4rem;
+}
+.about .sc-company .info .txt p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.about .sc-logo .img {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+.about .sc-logo .txt {
+  max-width: 94rem;
+  margin: 6rem auto 0;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+.about .sc-history .history-list {
+  max-width: 94rem;
+  margin: 0 auto;
+}
+.about .sc-history .history-list li {
+  margin-top: 4rem;
+  line-height: 1.8;
+}
+.about .sc-history .history-list li > span {
+  font-size: 2.8rem;
+}
+.about .sc-history .history-list li span em {
+  font-weight: 900;
+}
+.about .sc-history .history-list li p {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+  word-break: break-word;
+  text-indent: -3rem;
+}
+.about .sc-history .history-list li p span {
+  display: block;
+  text-indent: 0;
+}
+.about .sc-patent .patent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 138rem;
+  margin: 0 auto;
+}
+.about .sc-patent .patent-list li {
+  flex-basis: calc((100% - 4rem) / 3);
+  box-shadow: 0.1rem 0.1rem 0.7rem 0rem;
+}
+.about .sc-patent .desc {
+  padding-top: 10rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+.about .sc-award .award-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 138rem;
+  margin: 0 auto;
+}
+.about .sc-award .award-list li {
+  display: flex;
+  flex-basis: calc((100% - 4rem) / 3);
+  box-shadow: 0.1rem 0.1rem 0.7rem 0rem;
+}
+.about .img-logo {
+  padding: 10rem 0 20rem;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+/* contact */
+.contact .sc-contact {
+  padding-bottom: 13.6rem;
+}
+.contact .sc-title {
+  padding: 4rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+.contact .map {
+  margin-bottom: 4rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.contact .info li {
+  line-height: 1.8;
+  font-weight: 400;
+}
+.contact .info .company {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.contact .info .address {
+  font-size: 2rem;
+}
+.contact .sub-title {
+  padding: 9.6rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.contact .form-contact {
+  display: flex;
+  gap: 4rem;
+}
+.contact .input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: space-between;
+}
+.contact .input-item label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.contact .input-item input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: #f3f4f6;
+}
+.contact .input-item input::placeholder {
+  font-size: 1.4rem;
+  color: #9ca3af;
+}
+.contact .input-item textarea {
+  width: 100%;
+  height: 24.9rem;
+  box-sizing: border-box;
+  padding: 1.6rem;
+  font-weight: 200;
+  font-size: 1.6rem;
+  background-color: #f3f4f6;
+}
+.contact .input-item textarea::placeholder {
+  font-size: 1.4rem;
+  color: #9ca3af;
+}
+.contact .btn-send {
+  padding: 1.5rem 3.2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #000;
+}
+
+/************** media query ***************/
+@media (max-width: 900px) {
+  .home .sc-service .service-list li .mySwiper .swiper-slide {
+    max-width: 32rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide .tit {
+    font-size: 2.4rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .swiper-container {
+    position: relative;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-prev,
+  .home .sc-service .service-list li .swiper-container .btn-next {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 4.4rem;
+    height: 4.4rem;
+    cursor: pointer;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-next {
+    bottom: 0;
+    right: 0;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-prev {
+    bottom: 0;
+    right: 7rem;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+@media (max-width: 720px) {
+  /* header */
+  header .inner {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  header .logo {
+    order: 2;
+  }
+  header .logo a {
+    font-size: 2.8rem;
+  }
+  header .mo-btn {
+    order: 1;
+    display: block;
+  }
+  header .mo-btn svg {
+    padding: 2rem;
+    color: #fff;
+  }
+  header .gnb {
+    position: fixed;
+    left: 0;
+    top: 7rem;
+    width: 100%;
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #000;
+    margin-left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  header .gnb .gnb-list {
+    flex-direction: column;
+    gap: 0;
+    padding: 4rem 0;
+  }
+  header .gnb .gnb-list li a {
+    display: block;
+    padding: 2.8rem 3.2rem;
+    font-size: 3rem;
+  }
+  header .lang {
+    order: 3;
+    margin-left: 0;
+  }
+
+  /* home */
+  .home .sc-banner .banner .banner-img {
+    height: calc(100vh - 7rem);
+  }
+  .home .sc-banner .banner .banner-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .home .sc-banner .banner .banner-txt {
+    display: none;
+  }
+  .home .sc-banner .banner .mo-txt-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem;
+  }
+  .home .sc-banner .banner .img-logo {
+    bottom: 3rem;
+    width: 47vw;
+  }
+  .home .sc-banner .sc-title {
+    font-size: 4rem;
+  }
+  .home .sc-banner .desc {
+    font-size: 2.2rem;
+  }
+  .home .sc-feature .sc-title {
+    margin-bottom: 8rem;
+    font-size: 4rem;
+  }
+  .home .sc-feature .feature-list {
+    max-width: 100%;
+  }
+  .home .sc-feature .feature-list li {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .home .sc-feature .feature-list li img {
+    width: 100%;
+  }
+  .home .sc-feature .feature-list li .txt {
+    width: 100%;
+  }
+  .home .sc-feature .feature-list li .txt strong {
+    font-size: 2.8rem;
+  }
+  .home .sc-feature .feature-list li .txt p {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .txt strong {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
+  .home .sc-service .service-list li .txt .info {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .mySwiper {
+    margin-top: 6rem;
+  }
+
+  /* about */
+  .about .sc-title {
+    font-size: 4.8rem;
+  }
+  .about .sc-banner .img {
+    height: 100vh;
+  }
+  .about .sc-banner .img img {
+    height: 100%;
+  }
+  .about .sc-banner .img span {
+    font-size: 17vw;
+  }
+  .about .sc-banner .txt h2 {
+    font-size: 4.7rem;
+  }
+  .about .sc-banner .txt h2 .mo {
+    display: block;
+  }
+  .about .sc-banner .txt p {
+    font-size: 2rem;
+  }
+  .about .sc-company .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .sc-company .info .img {
+    max-width: 48rem;
+  }
+  .about .sc-company .info .txt {
+    max-width: 100%;
+  }
+  .about .sc-patent .patent-list {
+    gap: 4rem;
+  }
+  .about .sc-patent .patent-list li {
+    flex-basis: 100%;
+  }
+  .about .sc-award .award-list {
+    gap: 4rem;
+  }
+  .about .sc-award .award-list li {
+    flex-basis: 100%;
+  }
+  .about .img-logo {
+    max-width: 28rem;
+  }
+
+  /* contact */
+  .contact .form-contact {
+    flex-direction: column;
+  }
+}

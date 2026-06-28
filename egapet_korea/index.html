@@ -2,10 +2,502 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>egapet korea</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="기본 설명" />
+    <meta property="og:title" content="EGAPETKOREA" />
+    <meta property="og:description" content="기본 설명" />
+    <meta property="og:url" content="https://EGAPETKOREA.workson.co.kr" />
+    <meta property="og:site_name" content="EGAPETKOREA" />
+    <meta property="og:image" content="https://workson.kr/default-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EGAPETKOREA" />
+    <meta name="twitter:description" content="기본 설명" />
+    <meta name="twitter:image" content="https://workson.kr/default-og.png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <title>EGAPETKOREA</title>
+    <link
+      rel="icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+      sizes="16x16" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
-    ddd
+  <body class="home bg-black">
+    <!-- header -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="./index.html">EGAPETKOREA</a>
+        </h1>
+        <button class="mo-btn">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="0"
+            viewBox="0 0 15 15"
+            height="24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
+              fill="currentColor"></path>
+          </svg>
+        </button>
+        <nav class="gnb">
+          <ul class="gnb-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <!-- <li><a href="./contact.html">Contact</a></li> -->
+          </ul>
+        </nav>
+        <span class="lang">ENG</span>
+      </div>
+    </header>
+    <!-- //header -->
+    <!-- main -->
+    <main>
+      <section class="sc-banner">
+        <div class="banner">
+          <div class="banner-img">
+            <picture>
+              <source
+                srcset="./assets/images/banner_web_home.png"
+                media="(max-width: 720px)" />
+              <img
+                src="./assets/images/banner_web_home.png"
+                alt="BEYOND IMAGINATION" />
+            </picture>
+          </div>
+          <div class="banner-info">
+            <p class="sub-txt">
+              A Nature-Inspired Pet Food Manufacturer<br />
+              Built on Trust and Shared Growth
+            </p>
+            <h2 class="banner-txt">EGAPET Korea</h2>
+          </div>
+          <!-- <div class="img-logo">
+            <img
+              src="./assets/images/home/logo_isol.png"
+              alt="intelligent solution" />
+          </div> -->
+        </div>
+        <div class="inner">
+          <h2 class="sc-title" data-aos="fade-up" data-aos-delay="100">
+            Thoughtfully Crafted for Better Well-Being,<br />
+            Creating Value in <span class="highlight">Pet Nutrition.</span>
+          </h2>
+          <p class="desc" data-aos="fade-up" data-aos-delay="200">
+            Built on Trust and Mutual Growth, EGAPET<br />
+            Korea is a premium pet treat manufacturer dedicated<br />
+            to preserving the natural taste and<br />
+            nutritional value of every ingredient.
+          </p>
+        </div>
+      </section>
+      <section class="sc-feature">
+        <div class="inner">
+          <h2 class="sc-title" data-aos="fade-up" data-aos-delay="100">
+            Minimally Processed to Preserve<br />
+            <span class="highlight">Nature's Authentic Taste and Aroma.</span>
+          </h2>
+          <p class="desc" data-aos="fade-up" data-aos-delay="200">
+            Ensuring Safety and Freshness Without<br />
+            Chemical Preservatives.
+          </p>
+          <ul class="feature-list">
+            <li data-aos="fade-up">
+              <img src="./assets/images/img_feature1.png" alt="끊임없는 도전" />
+              <div class="txt">
+                <strong>A Trusted Pet Food Manufacturer</strong>
+                <p>
+                  EGAPET Korea is a specialized pet food manufacturer<br />
+                  producing safe and reliable dog treats, built on the
+                  livestock<br />
+                  processing expertise of EGA Co., Ltd. We preserve the<br />
+                  natural taste and nutritional value of ingredients through<br />
+                  minimal processing, while ensuring freshness and<br />
+                  safety without the use of chemical preservatives.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-service">
+        <ul class="service-list">
+          <li data-aos="fade-up">
+            <div class="img">
+              <picture>
+                <source
+                  srcset="./assets/images/img_service1.jpg"
+                  media="(max-width: 720px)" />
+                <img src="./assets/images/img_service1.jpg" alt="" />
+              </picture>
+              <div class="inner">
+                <div class="txt">
+                  <strong class="highlight">01</strong>
+                  <p class="info">
+                    Powered by EGAPET Korea’s proprietary<br />
+                    expertise, we respond flexibly to the evolving<br />
+                    pet industry and continuously deliver products<br />
+                    that truly meet consumer needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="swiper-container">
+                <div
+                  class="swiper mySwiper"
+                  data-aos="fade-up"
+                  data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="img">
+                        <img
+                          src="./assets/images/img_service1-01.jpg"
+                          alt="swiffy" />
+                      </div>
+                      <!-- <strong class="tit">AI기술 R&D</strong>
+                      <p class="desc">
+                        iSol은 단순한 자동화가 아닌 인간의 삶을 더 깊이 이해하고
+                        보살피는 AI 연구개발에 힘쓰고 있습니다. 사람의 목소리,
+                        작은 동작, 미묘한 표정까지 세밀하게 감지할 수 있는
+                        인공지능 알고리즘을 통해 환자의 상태를 정밀하게
+                        파악하고, 돌봄 상황에 즉각적으로 대응할 수 있는 기반을
+                        마련합니다.<br />
+                        <br />
+                        이러한 기술은 단순히 데이터를 처리하는 차원을 넘어, 인간
+                        중심의 돌봄 로봇이 되기 위한 두뇌 역할을 합니다. iSol의
+                        AI R&D는 의료, 간호, 생활 지원 등 다양한 분야에서 활용
+                        가능한 핵심 기술로 발전하고 있으며, 앞으로도 더
+                        지능적이고 따뜻한 로봇을 구현 하기 위해 연구를
+                        이어갑니다.
+                      </p> -->
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img">
+                        <img
+                          src="./assets/images/img_service1-02.jpg"
+                          alt="동물의집" />
+                      </div>
+                      <!-- <strong class="tit">현장의 최적화된 로봇 연구개발</strong>
+                      <p class="desc">
+                        iSol은 연구실 속 이론에 머무르지 않고 실제 현장에서
+                        필요로 하는 솔루션을 찾는 데 집중 합니다.<br />
+                        <br />
+                        간호 로봇은 환자의 이동, 기본 간호 지원, 환자 안전
+                        모니터링 등을 수행하며 의료진의 업무 부담을 덜어줍니다.
+                        또한 비침습 혈당 측정 장치는 환자의 불편함을 줄이고 건강
+                        데이터를 보다 안전하고 정확하게 제공합니다. 가정이나
+                        요양 시설에서 활용되는 돌봄 로봇은 고령자나 장애인의
+                        일상생활을 지원하며, 자립적인 생활을 돕습니다.<br />
+                        <br />
+                        iSol은 이렇게 현장의 목소리를 반영한 맞춤형 로봇을 통해
+                        안전성과 신뢰성을 확보하며, 사용자와 가장 가까운 곳 에서
+                        함께하는 로봇을 만들어갑니다.
+                      </p> -->
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img">
+                        <img
+                          src="./assets/images/img_service1-03.jpg"
+                          alt="닥터뉴터" />
+                      </div>
+                      <!-- <strong class="tit"
+                        >다양한 산업에 맞는 AI로봇 연구개발</strong
+                      >
+                      <p class="desc">
+                        iSol은 AI와 로봇의 융합으로 의료와 돌봄의 미래를 새롭게
+                        열어가고 있습니다. 우리는 기술이 인간의 삶을 대체하는
+                        것이 아니라, 더 깊이 이해하고 함께하는 동반자가 되어야
+                        한다고 믿습니다.<br />
+                        <br />
+                        환자와 가족, 의료진이 겪는 어려움을 기술로 공감하며
+                        해결하는 것, 그리고 더 안전하고 존중받는 돌봄 환경을
+                        만드는 것이 우리의 목표입니다. iSol은 병원과 가정,
+                        그리고 사회 전반에서 모두가 안심할 수 있는 헬스케어
+                        환경을 구현하며, 인간 중심의 따뜻한 혁신을 실현하는
+                        미래를 지향합니다.
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-next">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="#6E6E6E"
+                    style="color: #6e6e6e"
+                    height="40"
+                    width="40"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm244.5 0l-81.9-81.1c-7.5-7.5-7.5-19.8 0-27.3s19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81z"></path>
+                  </svg>
+                </div>
+                <div class="btn-prev">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="#6E6E6E"
+                    style="color: #6e6e6e"
+                    height="40"
+                    width="40"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm43.4 289.1c7.5 7.5 7.5 19.8 0 27.3-3.8 3.8-8.7 5.6-13.6 5.6s-9.9-1.9-13.7-5.7l-94-94.3c-6.9-7.6-6.7-19.3.6-26.6l95.4-95.7c7.5-7.5 19.7-7.6 27.3 0 7.5 7.5 7.6 19.7 0 27.3l-81.9 81 79.9 81.1z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li data-aos="fade-up">
+            <div class="img">
+              <picture>
+                <source
+                  srcset="./assets/images/img_mo_service2.jpg"
+                  media="(max-width: 720px)" />
+                <img src="./assets/images/img_service2.jpg" alt="" />
+              </picture>
+              <div class="inner">
+                <div class="txt">
+                  <strong class="highlight">02</strong>
+                  <p class="info">Manufacturing Partner for Leading Brands</p>
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="swiper-container">
+                <div
+                  class="swiper mySwiper"
+                  data-aos="fade-up"
+                  data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide fc-main">
+                      <div class="img">
+                        <img
+                          src="./assets/images/img_service2-01.jpg"
+                          alt="Sweety Oduk-Oduk" />
+                      </div>
+                      <strong class="tit"
+                        >Sweety <span class="highlight">Oduk-Oduk</span></strong
+                      >
+                      <!-- <p class="desc">
+                        iSol의 돌봄 로봇은 모듈형 구조를 기반으로 다양한 환경과
+                        요구에 유연하게 대응.<br />
+                        <br />
+                        각 기능 모듈은 돌봄, 모니터링, 이동 지원 등 상황에 맞게
+                        조합되어 사용자의 필요에 최적화된 도움을 제공. 이러한
+                        모듈형 기술은 유지 보수와 확장이 용이해, 지속 가능한
+                        돌봄 혁신을 가능하게 함.
+                      </p> -->
+                    </div>
+                    <div class="swiper-slide fc-main">
+                      <div class="img">
+                        <img
+                          src="./assets/images/img_service2-02.jpg"
+                          alt="Daesang Haryu whole meat" />
+                      </div>
+                      <strong class="tit"
+                        >Daesang
+                        <span class="highlight">Haryu whole meat</span></strong
+                      >
+                      <!-- <p class="desc">
+                        iSol의 돌봄 로봇은 노인의 일상을 지키는 든든한 동반자
+                        역할을 함. 복약 시간과 용량을 정확히 안내하고, 음성
+                        인식과 영상 통화를 통해 가족이나 돌봄 인력과 자연스럽게
+                        소통할 수 있음.<br />
+                        <br />
+                        또한 실시간으로 움직임과 이상상황을 감지해 방범 및
+                        안전을 지원. 이러한 통합형 AI 돌봄 로봇은 노인의 자립을
+                        돕고, 가족에게는 안심을, 사회에는 지속 가능한 돌봄의
+                        미래를 제시.
+                      </p> -->
+                    </div>
+                    <div class="swiper-slide fc-main">
+                      <div class="img">
+                        <img
+                          src="./assets/images/img_service2-03.jpg"
+                          alt="Animal house Pure chicken breast" />
+                      </div>
+                      <strong class="tit"
+                        >Animal house
+                        <span class="highlight"
+                          >Pure chicken breast</span
+                        ></strong
+                      >
+                      <!-- <p class="desc">
+                        iSol의 돌봄 로봇은 어린이의 하루를 함께하는 스마트한
+                        친구역할을 함. 학습 콘텐츠와 놀이를 결합해 자연스러운
+                        교육 환경을 만들고, 음성 인식과 표정 분석을 통해 아이의
+                        정서를 이해 하며 따뜻한 대화를 나눔. 또한 위험한 상황
+                        이나 이상 행동을 실시간으로 감지해 보호자 에게 알림을
+                        보내 안전을 지킴.<br />
+                        <br />
+                        iSol은 기술을 통해 아이의 성장을 돕고, 부모 에게는
+                        믿음을 주는 새로운 형태의 돌봄을 제시함.
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-next">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="#6E6E6E"
+                    style="color: #6e6e6e"
+                    height="40"
+                    width="40"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm244.5 0l-81.9-81.1c-7.5-7.5-7.5-19.8 0-27.3s19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81z"></path>
+                  </svg>
+                </div>
+                <div class="btn-prev">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="#6E6E6E"
+                    style="color: #6e6e6e"
+                    height="40"
+                    width="40"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm43.4 289.1c7.5 7.5 7.5 19.8 0 27.3-3.8 3.8-8.7 5.6-13.6 5.6s-9.9-1.9-13.7-5.7l-94-94.3c-6.9-7.6-6.7-19.3.6-26.6l95.4-95.7c7.5-7.5 19.7-7.6 27.3 0 7.5 7.5 7.6 19.7 0 27.3l-81.9 81 79.9 81.1z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- 상단으로 -->
+      <div class="btn-top-wrap">
+        <button class="btn-top">
+          <img src="./assets/images/icon_top.png" alt="상단으로" />
+        </button>
+      </div>
+      <!-- //상단으로 -->
+    </main>
+    <!-- //main -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="info">
+          <span>egapetkorea</span>
+          <span>대한민국</span>
+          <span>053-593-3322</span>
+          <span>egapetkor@naver.com</span>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+      function initAOS() {
+        AOS.init({
+          duration: 800,
+          easing: "ease-out-cubic",
+          once: false,
+          mirror: true,
+          offset: 120,
+        });
+      }
+
+      let isAOSRefreshing = false;
+      function safeAOSRefresh() {
+        if (isAOSRefreshing) return; // 중복 방지
+        isAOSRefreshing = true;
+
+        AOS.refreshHard(); // 강제 refresh
+        window.scrollTo(window.scrollX, window.scrollY + 1); // 트리거 강제
+
+        setTimeout(() => {
+          isAOSRefreshing = false;
+        }, 300); // 안전하게 300ms 후 잠금 해제
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initAOS();
+
+        document
+          .querySelectorAll(".swiper-container")
+          .forEach((containerEl) => {
+            const swiperEl = containerEl.querySelector(".mySwiper");
+            const nextBtn = containerEl.querySelector(".btn-next");
+            const prevBtn = containerEl.querySelector(".btn-prev");
+
+            new Swiper(swiperEl, {
+              slidesPerView: "auto",
+              spaceBetween: 20,
+              navigation: {
+                nextEl: nextBtn,
+                prevEl: prevBtn,
+                disabledClass: "btn-disabled",
+              },
+              breakpoints: {
+                900: {
+                  // 데스크탑
+                  spaceBetween: 40,
+                  slidesPerView: 3,
+                },
+              },
+            });
+          });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initAOS();
+      });
+
+      // Resize 시 안전하게 refresh (중복 방지 + 안정화)
+      let aosRefreshTimer = null;
+      window.addEventListener("resize", () => {
+        clearTimeout(aosRefreshTimer);
+        aosRefreshTimer = setTimeout(() => {
+          safeAOSRefresh();
+        }, 200);
+      });
+
+      // Orientation 변경 시
+      window.addEventListener("orientationchange", safeAOSRefresh);
+
+      // 빠른 스크롤에도 안정화
+      let scrollTimer = null;
+      window.addEventListener("scroll", () => {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(() => {
+          safeAOSRefresh();
+        }, 100); // 100ms 후 안전하게 refresh
+      });
+    </script>
+    <!-- //script -->
   </body>
 </html>
