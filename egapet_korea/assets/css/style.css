@@ -46,12 +46,12 @@ header .lang {
 /* footer */
 .footer {
   padding: 6rem 0;
-  color: #fff;
   background-color: #000;
 }
 .footer .info {
   text-align: center;
   font-size: 1.4rem;
+  color: #fff;
 }
 .footer .info span {
   display: block;
@@ -77,7 +77,9 @@ header .lang {
   border-radius: 50%;
   background-color: #fff;
 }
-
+.highlight {
+  color: #ed7d00;
+}
 /* home */
 .home .sc-banner .banner {
   position: relative;
@@ -85,26 +87,24 @@ header .lang {
 }
 .home .sc-banner .banner .banner-info {
   position: absolute;
-  left: 2rem;
-  bottom: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10rem;
+  border-left: 0.8rem solid #ed7d00;
+  padding-left: 2rem;
+  text-shadow: 0rem 0rem 1.2rem rgba(0, 0, 0, 0.4);
 }
 .home .sc-banner .banner .sub-txt {
   line-height: 1.4;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2vw;
   color: #fff;
-  text-shadow: 0.2rem 0.1rem 0.8rem #000;
 }
 .home .sc-banner .banner .banner-txt {
-  /* position: absolute;
-  left: 2rem;
-  top: 1rem; */
-  /* line-height: 1; */
-  font-family: "oswald";
-  font-weight: 900;
-  font-size: 7.2vw;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 2vw;
   color: #fff;
-  text-shadow: 0.2rem 0.1rem 0.8rem #000;
 }
 .home .sc-banner .banner .mo-txt-img {
   display: none;
@@ -122,61 +122,50 @@ header .lang {
 .home .sc-banner .sc-title {
   margin-bottom: 4rem;
   font-weight: 700;
-  font-size: 6rem;
-  color: #fff;
+  font-size: 5rem;
 }
 .home .sc-banner .desc {
   font-weight: 500;
   font-size: 2rem;
-  color: #bbb;
+  color: #888;
 }
 .home .sc-feature .sc-title {
   margin-bottom: 4rem;
   text-align: center;
   font-weight: 700;
-  font-size: 5.8rem;
-  color: #fff;
+  font-size: 5rem;
 }
 .home .sc-feature .desc {
   margin-bottom: 14.4rem;
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
-  color: #bbb;
+  color: #888;
 }
 .home .sc-feature .feature-list {
-  /* max-width: 89.6rem; */
+  max-width: 89.6rem;
   margin: 0 auto;
 }
 .home .sc-feature .feature-list li {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8rem;
 }
 .home .sc-feature .feature-list li img {
-  width: 70%;
-  border-radius: 0.6rem;
-}
-.home .sc-feature .feature-list li .txt {
-  text-align: center;
+  width: 50%;
 }
 .home .sc-feature .feature-list li .txt strong {
   display: block;
-  /* margin-bottom: 1.6rem; */
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
   font-weight: 700;
-  /* font-size: 2.4rem; */
-  font-size: 4rem;
-  color: #fff;
+  font-size: 2.4rem;
 }
 .home .sc-feature .feature-list li .txt p {
   line-height: 1.6;
   font-weight: 700;
-  /* font-size: 1.6rem; */
-  font-size: 2rem;
-  color: #bbb;
+  font-size: 1.6rem;
+  color: #888;
 }
 .home .sc-service .service-list li {
   margin-top: 6rem;
@@ -187,14 +176,14 @@ header .lang {
 .home .sc-service .service-list li > .img > .inner {
   position: absolute;
   left: 0;
-  bottom: 6rem;
+  bottom: 14rem;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
 .home .sc-service .service-list li .txt {
   margin-top: 4rem;
-  text-shadow: 0.1rem 0.1rem 1.6rem #000;
+  text-shadow: 0rem 0rem 1.2rem rgba(0, 0, 0, 0.4);
 }
 .home .sc-service .service-list li .txt strong {
   display: block;
@@ -202,7 +191,6 @@ header .lang {
   line-height: 1.2;
   font-weight: 700;
   font-size: 4.4vw;
-  color: #fff;
 }
 .home .sc-service .service-list li .txt .info {
   font-weight: 500;
@@ -224,14 +212,13 @@ header .lang {
   display: block;
   margin-bottom: 2.4rem;
   font-weight: 700;
-  font-size: 1.6rem;
-  color: #fff;
+  font-size: 1.8rem;
 }
 .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
   line-height: 1.6;
   font-weight: 700;
   font-size: 1.6rem;
-  color: #bbb;
+  color: #888;
 }
 .home .sc-service .service-list li .swiper-container .btn-prev,
 .home .sc-service .service-list li .swiper-container .btn-next {
@@ -257,14 +244,13 @@ header .lang {
 }
 .about .sc-banner .img span {
   position: absolute;
-  left: 50%;
+  right: 10%;
   top: 40%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  color: #fff;
+  /* transform: translate(-50%, -50%);
+  opacity: 0.5; */
   font-family: "Oswald";
-  font-weight: 900;
-  font-size: 8vw;
+  font-weight: 700;
+  font-size: 6vw;
   white-space: nowrap;
 }
 .about .sc-banner .txt {
@@ -273,15 +259,15 @@ header .lang {
 .about .sc-banner .txt h2 {
   margin-bottom: 4rem;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .about .sc-banner .txt p {
   font-weight: 500;
   font-size: 2.4rem;
 }
 .about .sc-banner .logo {
-  width: 20%;
-  margin: 10rem auto 0;
+  width: 60%;
+  margin: 23rem auto 0;
 }
 .about .sc-company .info {
   display: flex;
@@ -369,7 +355,7 @@ header .lang {
 }
 .about .img-logo {
   padding: 10rem 0 20rem;
-  max-width: 38rem;
+  max-width: 58rem;
   margin: 0 auto;
 }
 
@@ -461,7 +447,7 @@ header .lang {
     max-width: 32rem;
   }
   .home .sc-service .service-list li .mySwiper .swiper-slide .tit {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
     font-size: 1.8rem;
@@ -510,7 +496,6 @@ header .lang {
   }
   header .mo-btn svg {
     padding: 2rem;
-    color: #fff;
   }
   header .gnb {
     position: fixed;
@@ -542,15 +527,26 @@ header .lang {
 
   /* home */
   .home .sc-banner .banner .banner-img {
-    height: calc(100vh - 7rem);
+    height: 70vh;
   }
   .home .sc-banner .banner .banner-img img {
     height: 100%;
     object-fit: cover;
+    object-position: center right;
   }
+  .home .sc-banner .banner .banner-info {
+    top: auto;
+    transform: none;
+    left: 4rem;
+    bottom: 8rem;
+  }
+  .home .sc-banner .banner .sub-txt,
   .home .sc-banner .banner .banner-txt {
-    display: none;
+    font-size: 3.6vw;
   }
+  /* .home .sc-banner .banner .banner-txt {
+    display: none;
+  } */
   .home .sc-banner .banner .mo-txt-img {
     display: block;
     position: absolute;
@@ -563,14 +559,14 @@ header .lang {
     width: 47vw;
   }
   .home .sc-banner .sc-title {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .home .sc-banner .desc {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .home .sc-feature .sc-title {
     margin-bottom: 8rem;
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .home .sc-feature .feature-list {
     max-width: 100%;
@@ -584,12 +580,13 @@ header .lang {
   }
   .home .sc-feature .feature-list li .txt {
     width: 100%;
+    text-align: center;
   }
   .home .sc-feature .feature-list li .txt strong {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
   .home .sc-feature .feature-list li .txt p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .home .sc-service .service-list li .txt strong {
     margin-bottom: 2rem;
@@ -601,19 +598,38 @@ header .lang {
   .home .sc-service .service-list li .mySwiper {
     margin-top: 6rem;
   }
-
+  .home .sc-service .service-list li > .img {
+    height: 70vh;
+  }
+  .home .sc-service .service-list li > .img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .home .sc-service .service-list li > .img > .inner {
+    bottom: 8rem;
+  }
+  .home .sc-service .service-list li:nth-child(2) > .img img {
+    object-position: right;
+  }
   /* about */
   .about .sc-title {
     font-size: 4.8rem;
   }
   .about .sc-banner .img {
-    height: 100vh;
+    height: 70vh;
   }
   .about .sc-banner .img img {
     height: 100%;
+    object-position: left;
   }
   .about .sc-banner .img span {
-    font-size: 17vw;
+    right: 0;
+    left: 45%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 0;
+    font-size: 16vw;
   }
   .about .sc-banner .txt h2 {
     font-size: 4.7rem;
