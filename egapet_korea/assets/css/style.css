@@ -87,8 +87,7 @@ header .lang {
 }
 .home .sc-banner .banner .banner-info {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 10%;
   left: 10rem;
   border-left: 0.8rem solid #ed7d00;
   padding-left: 2rem;
@@ -526,6 +525,9 @@ header .lang {
   }
 
   /* home */
+  .home .sc-banner .inner {
+    padding: 8rem 3.2rem 0 3rem;
+  }
   .home .sc-banner .banner .banner-img {
     height: 70vh;
   }
@@ -565,8 +567,10 @@ header .lang {
     font-size: 2rem;
   }
   .home .sc-feature .sc-title {
-    margin-bottom: 8rem;
     font-size: 3.2rem;
+  }
+  .home .sc-feature .desc {
+    margin-bottom: 5rem;
   }
   .home .sc-feature .feature-list {
     max-width: 100%;
