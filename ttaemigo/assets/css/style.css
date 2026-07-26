@@ -136,7 +136,7 @@ header .lang {
 }
 .home .sc-feature .feature-list li .txt p {
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #bbb;
 }
@@ -156,7 +156,9 @@ header .lang {
 }
 .home .sc-service .service-list li .txt {
   margin-top: 4rem;
-  text-shadow: 0.1rem 0.1rem 1.6rem #000;
+}
+.home .sc-service .service-list li .txt span {
+  font-size: 2.8rem;
 }
 .home .sc-service .service-list li .txt strong {
   display: block;
@@ -188,7 +190,7 @@ header .lang {
 }
 .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #bbb;
 }
@@ -202,11 +204,11 @@ header .lang {
   margin-bottom: 7rem;
   font-weight: 700;
   font-size: 4.2rem;
-  color: #b7904d;
+  /* color: #b7904d; */
   text-align: center;
 }
 .about .sc-banner .inner {
-  padding: 10rem 3.2rem;
+  padding: 13rem 3.2rem;
 }
 .about .sc-banner .img {
   position: relative;
@@ -231,11 +233,12 @@ header .lang {
 .about .sc-banner .txt h2 {
   margin-bottom: 4rem;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 10rem;
 }
 .about .sc-banner .txt p {
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 3.4rem;
+  color: #777;
 }
 .about .sc-company .info {
   display: flex;
@@ -257,18 +260,24 @@ header .lang {
   font-size: 1.8rem;
   line-height: 1.6;
 }
-.about .sc-logo .img {
-  max-width: 38rem;
-  margin: 0 auto;
-}
-.about .sc-logo .txt {
-  max-width: 94rem;
+.about .sc-vision .txt {
+  max-width: 50%;
   margin: 6rem auto 0;
   line-height: 1.6;
   font-size: 1.8rem;
 }
+.about .sc-vision .txt span strong {
+  font-weight: bold;
+}
+.about .sc-vision .txt p {
+  color: #777;
+}
+.about .sc-vision .txt p + span {
+  display: block;
+  margin-top: 2rem;
+}
 .about .sc-history .history-list {
-  max-width: 94rem;
+  max-width: 50%;
   margin: 0 auto;
 }
 .about .sc-history .history-list li {
@@ -285,7 +294,7 @@ header .lang {
   padding-left: 3rem;
   font-size: 1.8rem;
   word-break: break-word;
-  text-indent: -3rem;
+  /* text-indent: -3rem; */
 }
 .about .sc-history .history-list li p span {
   display: block;
@@ -511,14 +520,14 @@ header .lang {
     width: 47vw;
   } */
   .home .sc-banner .sc-title {
-    font-size: 4rem;
+    font-size: 3.3rem;
   }
-  .home .sc-banner .desc {
-    font-size: 2.2rem;
-  }
+  /* .home .sc-banner .desc {
+    font-size: 1.8rem;
+  } */
   .home .sc-feature .sc-title {
-    margin-bottom: 8rem;
-    font-size: 4rem;
+    margin-bottom: 2.8rem;
+    font-size: 3.3rem;
   }
   .home .sc-feature .feature-list {
     max-width: 100%;
@@ -554,23 +563,23 @@ header .lang {
   .about .sc-title {
     font-size: 4.8rem;
   }
-  .about .sc-banner .img {
+  /* .about .sc-banner .img {
     height: 100vh;
   }
   .about .sc-banner .img img {
     height: 100%;
-  }
+  } */
   .about .sc-banner .img span {
     font-size: 17vw;
   }
   .about .sc-banner .txt h2 {
-    font-size: 4.7rem;
+    font-size: 7rem;
   }
   .about .sc-banner .txt h2 .mo {
     display: block;
   }
   .about .sc-banner .txt p {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .about .sc-company .info {
     flex-direction: column;
@@ -580,6 +589,12 @@ header .lang {
     max-width: 48rem;
   }
   .about .sc-company .info .txt {
+    max-width: 100%;
+  }
+  .about .sc-vision .txt {
+    max-width: 100%;
+  }
+  .about .sc-history .history-list {
     max-width: 100%;
   }
   .about .sc-patent .patent-list {

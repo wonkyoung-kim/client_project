@@ -109,7 +109,7 @@ html {
 body {
   overflow-x: hidden;
   line-height: 1.4;
-  font-family: "NanumSquareNeo";
+  font-family: "Geomini";
   font-weight: 500;
   font-size: 1.6rem;
   word-break: keep-all;
@@ -145,12 +145,12 @@ img {
 button {
   padding: 0;
   border: 0;
-  font-family: "NanumSquareNeo";
+  font-family: "Geomini";
   background: none;
   cursor: pointer;
 }
 input {
-  font-family: "NanumSquareNeo";
+  font-family: "Geomini";
   border: none;
   outline: none;
 }
@@ -158,7 +158,7 @@ textarea {
   resize: none;
   outline: none;
   border: none;
-  font-family: "NanumSquareNeo";
+  font-family: "Geomini";
 }
 
 @media (max-width: 720px) {
