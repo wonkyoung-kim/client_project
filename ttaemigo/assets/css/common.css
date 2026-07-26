@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("../font/NanumSquareNeo-Variable.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../font/Oswald-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+.inner {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  box-sizing: border-box;
+}
+
+section:not(:first-of-type) {
+  padding: 12rem 0;
+}
+
+.fc-main {
+  color: #b7904d;
+}
+
+.bg-black {
+  background-color: #000;
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 53%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 50%;
+  }
+  br.mo-hidden {
+    display: none;
+  }
+  .inner {
+    max-width: 100%;
+  }
+  section:not(:first-of-type) {
+    padding: 6rem 0;
+  }
+}
