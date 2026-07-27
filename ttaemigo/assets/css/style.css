@@ -551,12 +551,16 @@ header .lang {
     margin-left: 0;
     transform: translateX(-100%);
     visibility: hidden;
-    transition: transform 0.25s ease-in-out, visibility 0s linear 0.25s;
+    transition:
+      transform 0.25s ease-in-out,
+      visibility 0s linear 0.25s;
   }
   header.nav-open .gnb {
     transform: translateX(0);
     visibility: visible;
-    transition: transform 0.25s ease-in-out, visibility 0s linear 0s;
+    transition:
+      transform 0.25s ease-in-out,
+      visibility 0s linear 0s;
   }
   header .gnb .gnb-list {
     flex-direction: column;
@@ -626,7 +630,8 @@ header .lang {
     font-size: 2.4rem;
   }
   .home .sc-service .service-list li .txt strong {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 5.4vw;
   }
   .home .sc-service .service-list li .txt .info {
     font-size: 1.8rem;
