@@ -83,7 +83,7 @@ header .lang {
   z-index: -1;
 }
 .home .sc-banner .inner {
-  padding: 10rem 3.2rem;
+  padding: 10rem 0;
   text-align: center;
 }
 .home .sc-banner .sc-title {
@@ -92,18 +92,17 @@ header .lang {
   text-wrap: balance;
   font-weight: 700;
   /* 지정된 <br> 위치가 중간 너비에서도 유지되도록 유동 크기 */
-  font-size: clamp(3.2rem, 4.4vw, 6rem);
+  font-size: clamp(3.2rem, 5.5vw, 10rem);
 }
 .home .sc-banner .sc-title span {
   color: var(--c-accent);
 }
 .home .sc-banner .desc {
-  max-width: var(--measure);
   margin: 0 auto;
   line-height: var(--lh-body);
-  text-wrap: pretty;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.6rem;
+  word-break: keep-all;
   color: var(--c-muted);
 }
 .home .sc-feature .sc-title {
@@ -112,16 +111,15 @@ header .lang {
   line-height: 1.25;
   text-wrap: balance;
   font-weight: 700;
-  font-size: clamp(3.2rem, 4.2vw, 5.8rem);
+  font-size: clamp(3.2rem, 5.2vw, 6.4rem);
 }
 .home .sc-feature .desc {
-  max-width: var(--measure);
   margin: 0 auto 7.4rem;
   text-align: center;
   line-height: var(--lh-body);
-  text-wrap: pretty;
+  word-break: keep-all;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--c-muted);
 }
 .home .sc-feature .feature-list {
@@ -152,13 +150,13 @@ header .lang {
   line-height: 1.3;
   text-wrap: balance;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 .home .sc-feature .feature-list li .txt p {
   line-height: 1.7;
   text-wrap: pretty;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--c-muted);
 }
 .home .sc-service .service-list li {
@@ -245,7 +243,7 @@ header .lang {
   margin-bottom: 4.5rem;
   line-height: var(--lh-snug);
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: var(--conti-lime-title);
   text-align: center;
 }
@@ -259,10 +257,9 @@ header .lang {
   object-fit: cover;
 }
 .about .sc-banner .inner {
-  padding: 5.1rem 3.2rem 6.3rem;
+  padding: 6.3rem 3.2rem;
 }
 .about .sc-banner .txt {
-  max-width: 68rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -270,13 +267,13 @@ header .lang {
   margin-bottom: 5.7rem;
   line-height: var(--lh-tight);
   font-weight: 700;
-  font-size: 5.25rem;
+  font-size: 7.2rem;
   color: var(--conti-green);
 }
 .about .sc-banner .txt p {
   line-height: 1.35;
-  font-weight: 700;
-  font-size: 2.25rem;
+  font-weight: 500;
+  font-size: 2.6rem;
   color: var(--conti-body);
 }
 .about .sc-banner .txt p + p {
