@@ -187,7 +187,7 @@ header .lang {
 .home .sc-service .service-list li .txt .info {
   font-weight: 500;
   font-size: 1.4vw;
-  color: #fff;
+  color: #ddd;
 }
 .home .sc-service .service-list li .mySwiper {
   margin-top: 12rem;
@@ -219,10 +219,13 @@ header .lang {
 }
 
 /* about */
+.about {
+  color: #fff;
+}
 .about .sc-title {
   margin-bottom: 7rem;
   font-weight: 700;
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   color: #b7904d;
   text-align: center;
 }
@@ -253,11 +256,12 @@ header .lang {
 .about .sc-banner .txt h2 {
   margin-bottom: 4rem;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 5.8rem;
+  white-space: pre-line;
 }
 .about .sc-banner .txt p {
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 .about .sc-company .info {
   display: flex;
@@ -276,8 +280,9 @@ header .lang {
   font-size: 4rem;
 }
 .about .sc-company .info .txt p {
-  font-size: 1.8rem;
-  line-height: 1.6;
+  text-align: center;
+  font-size: 2.6rem;
+  line-height: 2;
 }
 .about .sc-logo .img {
   max-width: 38rem;
@@ -286,8 +291,9 @@ header .lang {
 .about .sc-logo .txt {
   max-width: 94rem;
   margin: 6rem auto 0;
+  text-align: center;
   line-height: 1.6;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
 }
 .about .sc-history .history-list {
   max-width: 94rem;
@@ -298,14 +304,14 @@ header .lang {
   line-height: 1.8;
 }
 .about .sc-history .history-list li > span {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 .about .sc-history .history-list li span em {
   font-weight: 900;
 }
 .about .sc-history .history-list li p {
   padding-left: 3rem;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   word-break: break-word;
   text-indent: -3rem;
 }
@@ -313,16 +319,11 @@ header .lang {
   display: block;
   text-indent: 0;
 }
-.about .sc-patent .patent-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 138rem;
+.about .sc-patent p {
+  line-height: 2;
+  font-size: 2.8rem;
+  text-align: center;
   margin: 0 auto;
-}
-.about .sc-patent .patent-list li {
-  flex-basis: calc((100% - 4rem) / 3);
-  box-shadow: 0.1rem 0.1rem 0.7rem 0rem;
 }
 .about .sc-award .award-list {
   display: flex;
@@ -577,25 +578,19 @@ header .lang {
 
   /* about */
   .about .sc-title {
-    font-size: 4.8rem;
-  }
-  .about .sc-banner .img {
-    height: 100vh;
-  }
-  .about .sc-banner .img img {
-    height: 100%;
+    font-size: 3.4rem;
   }
   .about .sc-banner .img span {
     font-size: 17vw;
   }
   .about .sc-banner .txt h2 {
-    font-size: 4.7rem;
+    font-size: 3.4rem;
   }
   .about .sc-banner .txt h2 .mo {
     display: block;
   }
   .about .sc-banner .txt p {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .about .sc-company .info {
     flex-direction: column;
@@ -607,11 +602,27 @@ header .lang {
   .about .sc-company .info .txt {
     max-width: 100%;
   }
+  .about .sc-company .info .txt p {
+    font-size: 2.4rem;
+  }
+  .about .sc-logo .txt {
+    font-size: 2.4rem;
+  }
   .about .sc-patent .patent-list {
     gap: 4rem;
   }
   .about .sc-patent .patent-list li {
     flex-basis: 100%;
+  }
+  .about .sc-patent p {
+    font-size: 2.4rem;
+  }
+  .about .sc-history .history-list li > span {
+    font-size: 2.8rem;
+  }
+  .about .sc-history .history-list li p {
+    font-size: 2.4rem;
+    text-indent: 0;
   }
   .about .sc-award .award-list {
     gap: 4rem;
