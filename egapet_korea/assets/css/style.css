@@ -142,7 +142,9 @@ header .lang {
   color: #888;
 }
 .home .sc-feature .feature-list {
-  max-width: 89.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
   margin: 0 auto;
 }
 .home .sc-feature .feature-list li {
@@ -322,19 +324,8 @@ header .lang {
   display: block;
   text-indent: 0;
 }
-.about .sc-patent .patent-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 138rem;
-  margin: 0 auto;
-}
-.about .sc-patent .patent-list li {
-  flex-basis: calc((100% - 4rem) / 3);
-  box-shadow: 0.1rem 0.1rem 0.7rem 0rem;
-}
 .about .sc-patent .desc {
-  padding-top: 10rem;
+  padding-top: 16rem;
   text-align: center;
   font-weight: 500;
   font-size: 2.8rem;
@@ -356,6 +347,33 @@ header .lang {
   padding: 10rem 0 20rem;
   max-width: 58rem;
   margin: 0 auto;
+}
+.about .sc-patent .patent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin: 0 auto;
+}
+.about .sc-patent .patent-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+.about .sc-patent .patent-list li img {
+  width: 32%;
+}
+.about .sc-patent .patent-list li .txt strong {
+  display: block;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.about .sc-patent .patent-list li .txt p {
+  line-height: 1.6;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #888;
 }
 
 /* contact */
@@ -587,10 +605,10 @@ header .lang {
     text-align: center;
   }
   .home .sc-feature .feature-list li .txt strong {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
   .home .sc-feature .feature-list li .txt p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .home .sc-service .service-list li .txt strong {
     margin-bottom: 2rem;
@@ -654,12 +672,6 @@ header .lang {
   .about .sc-company .info .txt {
     max-width: 100%;
   }
-  .about .sc-patent .patent-list {
-    gap: 4rem;
-  }
-  .about .sc-patent .patent-list li {
-    flex-basis: 100%;
-  }
   .about .sc-award .award-list {
     gap: 4rem;
   }
@@ -668,6 +680,32 @@ header .lang {
   }
   .about .img-logo {
     max-width: 28rem;
+  }
+  .about .sc-patent .sc-title {
+    font-size: 3.2rem;
+  }
+  .about .sc-patent .desc {
+    margin-bottom: 5rem;
+  }
+  .about .sc-patent .patent-list {
+    max-width: 100%;
+  }
+  .about .sc-patent .patent-list li {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .about .sc-patent .patent-list li img {
+    width: 100%;
+  }
+  .about .sc-patent .patent-list li .txt {
+    width: 100%;
+    text-align: center;
+  }
+  .about .sc-patent .patent-list li .txt strong {
+    font-size: 2.8rem;
+  }
+  .about .sc-patent .patent-list li .txt p {
+    font-size: 1.8rem;
   }
 
   /* contact */
