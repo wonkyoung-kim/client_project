@@ -648,8 +648,16 @@ header .lang {
   .home .sc-service .service-list li .mySwiper {
     margin-top: 6rem;
   }
+  .home .sc-service .service-list li > .img {
+    height: 60rem;
+  }
+  .home .sc-service .service-list li > .img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
   .home .sc-service .service-list li > .img > .inner {
-    bottom: 2rem;
+    bottom: 4rem;
   }
 
   /* about */
