@@ -49,10 +49,10 @@
   --sp-16: 12.8rem;
 
   /* reading measure */
-  --measure: 68rem;
+  --measure: 88rem;
 
   /* palette */
-  --c-accent: #1458ec;
+  --c-accent: #e02222;
   /* 흰 배경 대비 4.54:1 — WCAG AA(4.5:1) 충족하는 가장 밝은 회색 */
   --c-muted: #989898;
   --c-rule: rgba(0, 0, 0, 0.1);

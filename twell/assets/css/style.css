@@ -177,6 +177,7 @@ header .lang {
 }
 .home .sc-service .service-list li .txt {
   margin-top: 4rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 .home .sc-service .service-list li .txt span {
   font-weight: 700;
@@ -271,37 +272,37 @@ header .lang {
 }
 
 /* about — CEO message */
-.about .sc-company .info {
+.about section .info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: var(--sp-8);
 }
-.about .sc-company .info .txt {
+.about section .info .txt {
   width: 100%;
   max-width: var(--measure);
   margin: 0 auto;
   text-align: center;
+  word-break: keep-all;
 }
-.about .sc-company .info .txt strong {
+.about section .info .txt strong {
   display: block;
   margin-bottom: var(--sp-4);
   line-height: var(--lh-tight);
   font-weight: 700;
   font-size: var(--fs-h2);
 }
-.about .sc-company .info .txt strong span {
+.about section .info .txt strong span {
   padding-left: var(--sp-1);
   font-weight: 100;
   font-size: var(--fs-h3);
 }
-.about .sc-company .info .txt p {
+.about section .info .txt p {
   line-height: var(--lh-body);
   font-size: var(--fs-lg);
+  color: var(--c-muted);
 }
-.about .sc-company .info .txt p + p {
-  margin-top: var(--sp-3);
-}
-.about .sc-company .info .txt .sign {
+.about section .info .txt .sign {
   margin-top: var(--sp-5);
   font-weight: 700;
   color: var(--c-accent);
@@ -645,8 +646,15 @@ header .lang {
   .home .sc-service .service-list li .mySwiper {
     margin-top: 6rem;
   }
+  .home .sc-service .service-list li > .img {
+    height: 60rem;
+  }
+  .home .sc-service .service-list li > .img img {
+    height: 100%;
+    object-fit: cover;
+  }
   .home .sc-service .service-list li > .img > .inner {
-    bottom: 2rem;
+    bottom: 4rem;
   }
 
   /* about */
