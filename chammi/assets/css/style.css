@@ -187,11 +187,11 @@ header .lang {
 }
 .home .sc-service .service-list li .txt strong {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
   line-height: 1.1;
   letter-spacing: -0.1rem;
   font-weight: 700;
-  font-size: 3.8vw;
+  font-size: 3.5vw;
 }
 .home .sc-service .service-list li .txt .info {
   font-weight: 500;
