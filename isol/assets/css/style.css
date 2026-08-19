@@ -88,7 +88,7 @@ header .lang {
   left: 2rem;
   top: 1rem;
   line-height: 1;
-  font-family: "oswald";
+  font-family: "oswald", "NanumSquareNeo", sans-serif;
   font-weight: 900;
   font-size: 7.2vw;
   color: #fff;
@@ -242,7 +242,7 @@ header .lang {
   transform: translate(-50%, -50%);
   opacity: 0.5;
   color: #fff;
-  font-family: "Oswald";
+  font-family: "Oswald", "NanumSquareNeo", sans-serif;
   font-weight: 900;
   font-size: 8vw;
   white-space: nowrap;

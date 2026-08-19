@@ -109,7 +109,7 @@ html {
 body {
   overflow-x: hidden;
   line-height: 1.4;
-  font-family: "Geomini";
+  font-family: "Geomini", "NanumSquareNeo", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   word-break: keep-all;
@@ -145,12 +145,12 @@ img {
 button {
   padding: 0;
   border: 0;
-  font-family: "Geomini";
+  font-family: "Geomini", "NanumSquareNeo", sans-serif;
   background: none;
   cursor: pointer;
 }
 input {
-  font-family: "Geomini";
+  font-family: "Geomini", "NanumSquareNeo", sans-serif;
   border: none;
   outline: none;
 }
@@ -158,7 +158,7 @@ textarea {
   resize: none;
   outline: none;
   border: none;
-  font-family: "Geomini";
+  font-family: "Geomini", "NanumSquareNeo", sans-serif;
 }
 
 @media (max-width: 720px) {

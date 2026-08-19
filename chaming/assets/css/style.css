@@ -110,9 +110,8 @@ header .lang {
   margin: 0 auto 5.4rem;
   text-align: center;
   line-height: 1.25;
-  text-wrap: balance;
   font-weight: 700;
-  font-size: clamp(3.2rem, 4.2vw, 5.8rem);
+  font-size: clamp(3.2rem, 4.2vw, 5.2rem);
 }
 .home .sc-feature .desc {
   max-width: var(--measure);
@@ -285,7 +284,7 @@ header .lang {
   top: 40%;
   transform: translate(-50%, -50%);
   opacity: 0.5;
-  font-family: "Oswald";
+  font-family: "Oswald", "NanumSquareNeo", sans-serif;
   font-weight: 900;
   font-size: 8vw;
   white-space: nowrap;

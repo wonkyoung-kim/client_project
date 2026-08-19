@@ -92,7 +92,7 @@ header .lang {
   text-wrap: balance;
   font-weight: 700;
   /* 지정된 <br> 위치가 중간 너비에서도 유지되도록 유동 크기 */
-  font-size: clamp(3.2rem, 4.4vw, 6rem);
+  font-size: clamp(3.2rem, 4.4vw, 5.6rem);
 }
 .home .sc-banner .sc-title span {
   color: var(--c-accent);
@@ -253,7 +253,7 @@ header .lang {
   top: 40%;
   transform: translate(-50%, -50%);
   opacity: 0.5;
-  font-family: "Oswald";
+  font-family: "Oswald", "NanumSquareNeo", sans-serif;
   font-weight: 900;
   font-size: 8vw;
   white-space: nowrap;
