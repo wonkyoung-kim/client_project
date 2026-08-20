@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "NanumSquareNeo";
-  src: url("../font/NanumSquareNeo-Variable.ttf") format("truetype-variations"),
+  src: url("../font/NanumSquareNeo-Variable.woff2") format("woff2-variations"),
+    url("../font/NanumSquareNeo-Variable.woff2") format("woff2"),
     url("../font/NanumSquareNeo-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
@@ -11,7 +12,8 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../font/Urbanist-VariableFont_wght.ttf") format("truetype-variations"),
+  src: url("../font/Urbanist-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../font/Urbanist-VariableFont_wght.woff2") format("woff2"),
     url("../font/Urbanist-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;

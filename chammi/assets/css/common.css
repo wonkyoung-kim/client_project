@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "NanumSquareNeo";
-  src: url("../font/NanumSquareNeo-Variable.ttf") format("truetype-variations"),
+  src: url("../font/NanumSquareNeo-Variable.woff2") format("woff2-variations"),
+    url("../font/NanumSquareNeo-Variable.woff2") format("woff2"),
     url("../font/NanumSquareNeo-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
@@ -10,7 +11,8 @@
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../font/Oswald-VariableFont_wght.ttf") format("truetype-variations"),
+  src: url("../font/Oswald-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../font/Oswald-VariableFont_wght.woff2") format("woff2"),
     url("../font/Oswald-VariableFont_wght.ttf") format("truetype");
   font-weight: 200 700;
   font-style: normal;
@@ -18,7 +20,8 @@
 }
 @font-face {
   font-family: "Geomini";
-  src: url("../font/Geomini-VariableFont_wght.ttf") format("truetype-variations"),
+  src: url("../font/Geomini-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../font/Geomini-VariableFont_wght.woff2") format("woff2"),
     url("../font/Geomini-VariableFont_wght.ttf") format("truetype");
   font-weight: 200 800;
   font-style: normal;
