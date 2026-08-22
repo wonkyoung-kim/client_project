@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "NanumSquareNeo";
+  src:
+    url("../font/NanumSquareNeo-Variable.woff2") format("woff2-variations"),
+    url("../font/NanumSquareNeo-Variable.woff2") format("woff2"),
+    url("../font/NanumSquareNeo-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../font/Oswald-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../font/Oswald-VariableFont_wght.woff2") format("woff2"),
+    url("../font/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geomini";
+  src:
+    url("../font/Geomini-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../font/Geomini-VariableFont_wght.woff2") format("woff2"),
+    url("../font/Geomini-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* design tokens */
+:root {
+  /* type scale (root 62.5% → 1rem = 10px) */
+  --fs-display: 9.6rem;
+  --fs-h1: 4.8rem;
+  --fs-h2: 3.6rem;
+  --fs-h3: 2.8rem;
+  --fs-lg: 2.2rem;
+  --fs-body: 1.8rem;
+  --fs-sm: 1.6rem;
+  --fs-xs: 1.4rem;
+
+  /* line height */
+  --lh-tight: 1.1;
+  --lh-snug: 1.35;
+  --lh-body: 1.75;
+
+  /* spacing scale (8px base) */
+  --sp-1: 0.8rem;
+  --sp-2: 1.6rem;
+  --sp-3: 2.4rem;
+  --sp-4: 3.2rem;
+  --sp-5: 4rem;
+  --sp-6: 4.8rem;
+  --sp-8: 6.4rem;
+  --sp-10: 8rem;
+  --sp-12: 9.6rem;
+  --sp-16: 12.8rem;
+
+  /* reading measure */
+  --measure: 88rem;
+
+  /* palette */
+  --c-accent: #7cb22b;
+  /* 흰 배경 대비 4.54:1 — WCAG AA(4.5:1) 충족하는 가장 밝은 회색 */
+  --c-muted: #989898;
+  --c-rule: rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding-top: 7rem;
+  background-color: #282928;
+}
+
+.inner {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  box-sizing: border-box;
+  color: #fff;
+}
+section:not(:first-of-type) {
+  padding: 12rem 0;
+}
+
+.fc-main {
+  color: var(--c-accent);
+}
+
+.bg-black {
+  background-color: #000;
+}
+/* motion: honour OS-level reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 53%;
+  }
+  :root {
+    --measure: 78%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 50%;
+  }
+  :root {
+    --fs-display: 7.2rem;
+    --measure: 100%;
+  }
+  br.mo-hidden {
+    display: none;
+  }
+  .inner {
+    max-width: 100%;
+  }
+  section:not(:first-of-type) {
+    padding: 6rem 0;
+  }
+}
